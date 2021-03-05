@@ -4,6 +4,7 @@ body{
     color: #fff;
     position: relative;
     background: transparent;
+    
 
 
     &::before{
@@ -16,6 +17,21 @@ body{
         top: 0;
         height: 100vh;
         z-index: -1;
+    }
+}
+nav.navbar{
+    background-color: #041f32;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    a{
+        color: #04aed5
+    }
+    .dropdown-menu{
+        background-color: #041f32;
+        .dropdown-item{
+            color: #04aed5;
+        }
     }
 }
 
@@ -63,7 +79,7 @@ a{
     h1{
         margin: 0 0 10px 0;
         font-size: 64px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;; // Update later
+        font-family: cursive; // Update later
         color: #fff;
 
     }
@@ -88,6 +104,7 @@ a{
 
         &:hover{
             color: rgb(96, 190, 204);
+            text-shadow: black 2px 5px 5px;
         }
     }
 }
@@ -129,15 +146,15 @@ a{
     }
 }
 
-.resume{
-    #section-title{
-        h2{
-            color: rgb(16, 121, 190);
-        }
-        p{
-            color: rgb(17, 99, 153);
-        }
+.section-title{
+    h2{
+        color: rgb(16, 121, 190);
     }
+    p{
+        color: rgb(57, 81, 97);
+    }
+}
+.resume{
     .resume-title{
         font-size: 26px;
         font-weight: 700;
@@ -192,6 +209,27 @@ a{
             top: 0;
             background: rgb(73, 20, 220);
             border: 2px soild rgb(11, 131, 101);
+        }
+    }
+}
+
+
+.project-title{
+    color: rgb(16, 121, 190);
+    border: whitesmoke;
+}
+
+.projects{
+    .img-container{
+        background-color: black;
+        img{
+            height: 25vh;
+            width: 25vw;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, green,blue);
         }
     }
 }
