@@ -23,6 +23,11 @@ nav.navbar {
   position: fixed;
   top: 0;
   z-index: 100;
+  opacity: .5;
+}
+
+nav.navbar:hover {
+  opacity: 1.0;
 }
 
 nav.navbar a {
